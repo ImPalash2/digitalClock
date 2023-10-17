@@ -6,11 +6,11 @@ setInterval(()=>{
   let minit = day.getMinutes();
   let sec = day.getSeconds();
   let day_night = 'AM';
-  if(hour > 12){
-    hour = hour - 12;  
-  }
   if(hour >= 12){
     day_night = 'PM';
+  }
+  if(hour > 12){
+    hour = hour - 12;  
   }
   if(hour < 10){
     hour = '0' + hour;
